@@ -7,20 +7,15 @@ import requests,bs4,json,os,sys,random,datetime,time,re
 try:
 
 	import os
-	
 try:
-	
 	import requests
 except ImportError:
 	os.system("pip install requests")
 
-	time.sleep(1)
-
-	try:
-
-		import rich
-
-	except ImportError:
+try:
+	import concurrent.futures
+except ImportError:
+	os.system("pip install futures"):
 
 		exit('[✓] Internet Eror ,Install Manual (pip install rich)')
 
